@@ -1,4 +1,4 @@
-import {zingchart} from 'zingchart';
+import zingchart from 'zingchart';
 import React, { Component } from 'react';
 
 export class Core extends Component{
@@ -36,7 +36,7 @@ export class Core extends Component{
 
 export class Line extends Component{
     render(){
-        var myConfig = {
+        let myConfig = {
             type: "line",
         	series : this.props.series
         };
@@ -47,7 +47,7 @@ export class Line extends Component{
 
 export class Area extends Component{
     render(){
-        var myConfig = {
+        let myConfig = {
             type: "area",
         	series : this.props.series
         };
@@ -58,7 +58,7 @@ export class Area extends Component{
 
 export class Bar extends Component{
     render(){
-        var myConfig = {
+        let myConfig = {
             type: "bar",
         	series : this.props.series
         };
@@ -69,7 +69,7 @@ export class Bar extends Component{
 
 export class Scatter extends Component{
     render(){
-        var myConfig = {
+        let myConfig = {
             type: "scatter",
         	series : this.props.series
         };
@@ -80,7 +80,7 @@ export class Scatter extends Component{
 
 export class Pie extends Component{
     render(){
-        var myConfig = {
+        let myConfig = {
             type: "pie",
         	series : this.props.series
         };
